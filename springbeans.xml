@@ -5,25 +5,23 @@
 
 <beans>
 
-<bean id = "std" class = "com.student.Student">
+    <!-- Register Bean -->
+    <bean id="log" class="com.entity.Register">
+        <constructor-arg index="0" value="12" />
+        <constructor-arg index="1" value="Abhijeet" />
+        <constructor-arg index="2" value="Pune" />
+        <constructor-arg index="3" value="abhi23@gmail.com" />
+        <constructor-arg index="4" value="375672" />
+        <constructor-arg index="5" value="8724687647" />
+        <constructor-arg index="6" value="834757646574" />
+        <constructor-arg index="7" ref="r" />
+    </bean>
 
-<property name = "id" value = "5"></property>
-<property name = "name" value = "Shravani"></property>
-<property name = "add" value = "Kolhapur"></property> 
-<property name="con" ref="c"></property> 
-
-
-<!-- 
-<constructor-arg index = "0" value = "3"></constructor-arg>
-<constructor-arg index = "1" value = "Shravani"></constructor-arg>
-<constructor-arg index = "2" value = "Pune"></constructor-arg>
- -->
-
-</bean>
-<bean id = "c" class = "com.student.Country">
-<property name="c_id" value = "+91"></property>
-<property name="c_name" value = "India"></property>
-
-</bean>
+    <!-- Login Bean -->
+    <bean id="r" class="com.entity.Login">
+        <constructor-arg index="0" value="65" />
+        <constructor-arg index="1" value="abhi344@gmail.com" />
+        <constructor-arg index="2" value="6127" />
+    </bean>
 
 </beans>
