@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+    <!-- Register Bean -->
+    <bean id="log" class="com.entity.Register">
+        <property name="id" value="2" />
+        <property name="name" value="Shravani" />
+        <property name="add" value="Sangli" />
+        <property name="email" value="shravani02@gmail.com" />
+        <property name="pass" value="shravani05" />
+        <property name="mobNo" value="9283278372" />
+        <property name="adharNo" value="347627342734" />
+        <property name="log" ref="R" />
+    </bean>
+
+    <!-- Login Bean -->
+    <bean id="R" class="com.entity.Login">
+        <property name="l_id" value="765" />
+        <property name="l_email" value="shravani12@gmail.com" />
+        <property name="l_pass" value="7831" />
+    </bean>
+
+</beans>
